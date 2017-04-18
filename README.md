@@ -36,5 +36,5 @@ Options:
 # Sample job submission
 The command line below will submit a spark job in yarn cluster with 40 executors
 ```
-spark-submit --master yarn --num-executors 40 --class LoadCsv target/scala-2.10/loadcsv.jar -t TABLE_NAME -d DATABASE_NAME -f ',' --quote '"' -s false CSV_FILE_PATH_IN_HDFS
+spark-submit --master yarn --num-executors 40 --class LoadCsv loadcsv.jar -t TABLE_NAME -d DATABASE_NAME -f ',' --quote '"' -s false CSV_FILE_PATH_IN_HDFS
 ```
